@@ -106,6 +106,41 @@ footer {
   font-size: 0.9rem;
 }
 
+/* עיצוב למקטע היתרונות של בינה מלאכותית */
+.ai-benefits ul li {
+  margin-bottom: 0.6rem;
+  padding-right: 1.2rem;
+}
+
+/* עיצוב למקטע הכלים והלוגואים */
+.ai-tools .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.ai-tools .tool {
+  width: 200px;
+  text-align: center;
+}
+
+.ai-tools .tool img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.ai-tools .tool p {
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
 @media (max-width: 600px) {
   .hero-content h1 {
     font-size: 2rem;
