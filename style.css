@@ -217,3 +217,51 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* עיצוב לכרטיסים (קורסים, ייעוץ, מדריכים) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.2);
+  backdrop-filter: blur(2px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: perspective(600px) rotateX(-8deg) rotateY(8deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #0abdc6;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+/* עיצוב למקטעים החדשים: קורסים, ייעוץ, מדריכים */
+.academy, .consulting, .guides {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.1);
+  backdrop-filter: blur(2px);
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
