@@ -1,0 +1,113 @@
+/* עיצוב בסיסי לאתר של איציק הרוש */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a1a2b;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section h3 {
+  color: #0abdc6;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+ul li::before {
+  content: '•';
+  position: absolute;
+  right: 0;
+  color: #0abdc6;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #061221;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
