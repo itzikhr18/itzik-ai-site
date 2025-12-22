@@ -3,7 +3,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0a1a2b;
+  /* רקע שחור עם נגיעות ניאון באזורים שונים */
+  background-color: #000;
+  background-image: radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.25), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.25), transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(0, 128, 255, 0.15), transparent 70%);
   color: #fff;
   line-height: 1.6;
 }
@@ -115,19 +119,23 @@ a {
 
 /* צבעים מיוחדים לכל כרטיס */
 .cta-card.blue {
-  background: linear-gradient(45deg, #0074e4, #00b7ff);
+  /* גוונים ניאון לכרטיס הכחול */
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
 }
 
 .cta-card.pink {
-  background: linear-gradient(45deg, #8f2ba8, #c2437c);
+  /* גוונים ניאון לכרטיס הוורוד */
+  background: linear-gradient(45deg, #ff0080, #ff4dff);
 }
 
 .cta-card.orange {
-  background: linear-gradient(45deg, #bf5b00, #e68a00);
+  /* גוונים ניאון לכרטיס הכתום */
+  background: linear-gradient(45deg, #f83600, #f9d423);
 }
 
 .cta-card.green {
-  background: linear-gradient(45deg, #00875a, #00b47c);
+  /* גוונים ניאון לכרטיס הירוק */
+  background: linear-gradient(45deg, #00c9a7, #92fe9d);
 }
 
 section {
