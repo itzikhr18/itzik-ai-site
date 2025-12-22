@@ -68,6 +68,68 @@ a {
   margin-top: 1rem;
 }
 
+/* כפתורי קריאה לפעולה בחלק העליון של האתר */
+.hero-cta-cards {
+  /* הנחה כמיקום עצמאי מעל תמונת הרקע */
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  z-index: 1;
+}
+
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(45deg, #0074e4, #00b7ff);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.cta-card .cta-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.cta-card .cta-desc {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* צבעים מיוחדים לכל כרטיס */
+.cta-card.blue {
+  background: linear-gradient(45deg, #0074e4, #00b7ff);
+}
+
+.cta-card.pink {
+  background: linear-gradient(45deg, #8f2ba8, #c2437c);
+}
+
+.cta-card.orange {
+  background: linear-gradient(45deg, #bf5b00, #e68a00);
+}
+
+.cta-card.green {
+  background: linear-gradient(45deg, #00875a, #00b47c);
+}
+
 section {
   padding: 2rem 1rem;
   max-width: 800px;
@@ -215,6 +277,17 @@ footer {
 @media (max-width: 600px) {
   .hero-content h1 {
     font-size: 2rem;
+  }
+
+  /* פריסה מחדש לכפתורי ההירו במסכים קטנים */
+  .hero-cta-cards {
+    position: static;
+    transform: none;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
