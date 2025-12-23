@@ -5,10 +5,16 @@ body {
   font-family: Arial, sans-serif;
   /* רקע שחור עם נגיעות ניאון באזורים שונים */
   background-color: #000;
-  /* רקע מעודן יותר עם נגיעות ניאון עדינות כדי ליצור מראה מודרני */
-  background-image: radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.15), transparent 60%),
+  /*
+    רקע מעודן יותר עם נגיעות ניאון עדינות כדי ליצור מראה מודרני. הוספנו
+    repeating-radial-gradient כדי ליצור אפקט "כוכבים" – נקודות קטנות
+    המוסיפות חיים ורעננות לרקע מבלי להסיח את הדעת מהתוכן.
+  */
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.15), transparent 60%),
     radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.15), transparent 60%),
-    radial-gradient(circle at 50% 50%, rgba(0, 128, 255, 0.10), transparent 70%);
+    radial-gradient(circle at 50% 50%, rgba(0, 128, 255, 0.10), transparent 70%),
+    repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08) 0 2px, transparent 2px 8px);
   color: #fff;
   line-height: 1.6;
 }
@@ -271,6 +277,24 @@ section h3 {
   color: #0abdc6;
   margin-bottom: 1rem;
   font-size: 1.6rem;
+  /* מאפשר להוסיף קו דקורטיבי תחת הכותרת */
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+/* קו דקורטיבי ניאוני תחת כותרת כל מקטע */
+section h3::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -0.3rem;
+  margin: 0 auto;
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, #0072ff, #00c6ff, #ff00cc);
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.5);
+  border-radius: 2px;
 }
 
 ul {
@@ -329,7 +353,12 @@ footer {
 .tool-card h4 {
   margin: 0.5rem 0 0.3rem;
   font-size: 1.1rem;
-  color: #0abdc6;
+  /* Gradient text לכלים מומלצים */
+  background: linear-gradient(90deg, #00bfff, #ff4dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0abdc6; /* fallback */
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
 .tool-card p {
@@ -513,13 +542,24 @@ footer {
 .card h4 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: #0abdc6;
+  /* Gradient text לנראות ייחודית */
+  background: linear-gradient(90deg, #00bfff, #ff4dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0abdc6; /* fallback for דפדפנים ישנים */
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
 .card p {
   font-size: 0.9rem;
   color: #ddd;
   line-height: 1.4;
+}
+
+/* הצללה לטקסטים ברשימות ופסקאות לשיפור קריאות על רקע כהה */
+section p,
+section li {
+  text-shadow: 0 0 4px rgba(0, 188, 255, 0.25);
 }
 
 /* עיצוב למקטעים החדשים: קורסים, ייעוץ, מדריכים */
