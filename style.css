@@ -36,6 +36,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Ensure the subject (head) is visible by positioning the image from the top */
+  object-position: center top;
   z-index: -2;
 }
 
