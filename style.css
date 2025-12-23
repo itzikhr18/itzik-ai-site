@@ -350,6 +350,64 @@ footer {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* מקטע המלצות */
+.testimonials {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.2);
+  backdrop-filter: blur(2px);
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.testimonials h3 {
+  color: #0abdc6;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.testimonial-card {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.2);
+  backdrop-filter: blur(2px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.testimonial-card:hover {
+  transform: perspective(600px) rotateX(-5deg) rotateY(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-card p {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.testimonial-card .client {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #0abdc6;
+  font-weight: bold;
+  text-align: left;
+}
+
     /* עיצוב למקטע העתיד */
     .future {
       padding: 2rem 1rem;
