@@ -523,6 +523,68 @@ footer {
   margin-top: 1rem;
 }
 
+/* תגיות קטנות במקטע ידע וכלים */
+.tags {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 188, 255, 0.3);
+  box-shadow: 0 0 4px rgba(0, 188, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+/* צבעים מותאמים לכל תגית */
+.tag.practical {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+.tag.beginner {
+  background: linear-gradient(45deg, #ff4dff, #ff0080);
+}
+.tag.insight {
+  background: linear-gradient(45deg, #f83600, #f9d423);
+}
+.tag.time-saving {
+  background: linear-gradient(45deg, #00c9a7, #92fe9d);
+}
+
+/* קישור קטן לשיחת התאמה אישית */
+.mini-cta {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #00bfff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.mini-cta:hover {
+  color: #00f7ff;
+}
+
+/* מקטע איך זה עובד */
+.process {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.1);
+  backdrop-filter: blur(2px);
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.process h3 {
+  color: #0abdc6;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
 .card {
   width: 250px;
   background: rgba(255, 255, 255, 0.05);
