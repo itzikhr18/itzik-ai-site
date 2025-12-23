@@ -646,7 +646,8 @@ section li {
   align-items: center;
   justify-content: space-between;
   padding: 14px 18px;
-  background: rgba(0,0,0,0.45);
+  /* Lighten the header background for a softer, modern feel */
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0,255,255,0.12);
 }
@@ -702,6 +703,28 @@ section li {
 /* כדי שהתוכן לא ייכנס מתחת להדר */
 .hero {
   padding-top: 90px;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(90deg, #00bfff, #ff4dff);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 998;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-3px);
 }
 
 /* עיצוב בסיסי לאיקונים (אמוג'י) בכותרות */
