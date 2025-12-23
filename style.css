@@ -827,12 +827,21 @@ section li {
 }
 
 /* החלת האנימציה על כרטיסים שונים */
+/*
+ * Apply the fade-in animation to all interactive cards. This list
+ * originally included the services, tools, testimonials, process,
+ * consulting and guides cards. We extend it to FAQ items and
+ * success cards to ensure these sections animate consistently as
+ * they come into view.
+ */
 .card,
 .tool-card,
 .testimonial-card,
 .process .card,
 .consulting .card,
-.guides .card {
+.guides .card,
+.faq-item,
+.success-card {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease forwards;
@@ -934,11 +943,20 @@ section li {
 }
 
 /* ===== FAQ and Success sections ===== */
+/*
+ * FAQ and Success sections
+ *
+ * Lighten the background colour slightly so the content pops against
+ * the dark page. The previous opacity of 0.55 made the cards blend
+ * too heavily into the background. Reducing the alpha channel to
+ * 0.45 improves contrast without sacrificing the overall dark theme.
+ */
 .faq,
 .success {
   padding: 50px;
   margin: 50px 0;
-  background: rgba(0, 0, 0, 0.55);
+  /* Soften the dark overlay for better readability */
+  background: rgba(0, 0, 0, 0.45);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
