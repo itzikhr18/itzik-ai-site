@@ -427,6 +427,15 @@
   <script>
     // עדכון אוטומטי של השנה הנוכחית בפוטר
     document.getElementById('year').textContent = new Date().getFullYear();
+    // סגירת תפריט המובייל לאחר בחירה של קישור
+    document.querySelectorAll('.site-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        const navToggle = document.getElementById('nav-toggle');
+        if (navToggle) {
+          navToggle.checked = false;
+        }
+      });
+    });
   </script>
 </body>
 </html>
