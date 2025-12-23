@@ -17,13 +17,22 @@
   <meta name="twitter:image" content="https://itzikhr18.github.io/itzik-ai-site/og-image.jpg" />
 </head>
 <body>
-  <!-- Header with logo and CTA -->
+  <!-- Header with logo, navigation and CTA -->
   <header class="site-header">
     <a class="brand" href="#top" aria-label="דף הבית">
       <img src="logo.png" alt="איציק דיגיטל" class="brand-logo">
     </a>
-
-    <a class="header-cta" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%90%D7%99%D7%9A%20%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%99%D7%9B%D7%95%D7%9C%D7%94%20%D7%9C%D7%A2%D7%96%D7%95%D7%A8%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">
+    <!-- תפריט ניווט ראשי - מוצג במסכים רחבים בלבד -->
+    <nav class="site-nav">
+      <a href="#services">שירותים</a>
+      <a href="#guides">ידע וכלים</a>
+      <a href="#consulting">ליווי וייעוץ</a>
+      <a href="#process">איך זה עובד</a>
+      <a href="#free-offer">בדיקת התאמה</a>
+      <a href="#testimonials">המלצות</a>
+      <a href="#contact">צור קשר</a>
+    </nav>
+    <a class="header-cta" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%93%D7%A2%D7%AA%20%D7%90%D7%99%D7%9A%20%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%99%D7%9B%D7%95%D7%9C%D7%94%20%D7%9C%D7%A9%D7%93%D7%A8%D7%92%20%D7%90%D7%AA%20%D7%94%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%9A">
       דבר איתי בוואטסאפ
     </a>
   </header>
@@ -177,7 +186,7 @@
       </section>
 
       <!-- מקטע המלצות מלקוחות -->
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <h3>מה לקוחות אומרים</h3>
         <div class="cards testimonials-cards">
           <div class="card testimonial-card">
@@ -323,7 +332,7 @@
   </div>
 
   <!-- מקטע חדש: איך זה עובד? תהליך עבודה בשלושה צעדים -->
-  <section class="process">
+  <section id="process" class="process">
     <h3>איך זה עובד?</h3>
     <div class="cards">
       <div class="card">
@@ -347,7 +356,7 @@
   </div>
 
   <!-- מקטע הצעה חינמית להתאמה -->
-  <section class="free-offer">
+  <section id="free-offer" class="free-offer">
     <h3>בדיקת התאמה ללא עלות</h3>
     <p>רוצה לדעת איך בינה מלאכותית יכולה לשרת את העסק שלך? אשמח להעניק לך בדיקת התאמה חינמית ולהמליץ על כלים שישדרגו את העבודה היומיומית שלך.</p>
     <a href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%9F%20%D7%91%D7%91%D7%93%D7%99%D7%A7%D7%AA%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%9C%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99" class="cta-banner">לקבלת בדיקה חינם – דבר איתי</a>
@@ -363,7 +372,7 @@
     <a href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A8%D7%95%D7%90%D7%94%20%D7%90%D7%AA%20%D7%94%D7%94%D7%9E%D7%9C%D7%A6%D7%95%D7%AA%20%D7%95%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%9F%20%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C%20%D7%AA%D7%94%D7%9C%D7%99%D7%9A%20AI%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99" class="cta-banner">דבר איתי בוואטסאפ – נבדוק איך AI יכול לעזור לך</a>
   </div>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h3>צור קשר</h3>
     <p>עובד מהמשרד בירושלים ומעניק שירות אונליין בכל הארץ.</p>
     <p>טלפון/וואטסאפ: <a href="https://wa.me/972527237064">0527237064</a></p>
