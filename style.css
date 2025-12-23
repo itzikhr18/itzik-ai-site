@@ -710,6 +710,152 @@ section li {
   font-size: 1.3rem;
 }
 
+/* מקטעי קריאה לפעולה כלליים שנמצאים בין המקטעים */
+.section-cta {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.cta-banner {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-banner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* עיצוב למקטע הצעה חינמית */
+.free-offer {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.15);
+  backdrop-filter: blur(2px);
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.free-offer h3 {
+  color: #0abdc6;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.free-offer p {
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.4;
+  text-shadow: 0 0 4px rgba(0, 188, 255, 0.25);
+  margin-bottom: 1.5rem;
+}
+
+.free-offer .cta-banner {
+  margin-top: 0.5rem;
+}
+
+/* אנימציית הופעה הדרגתית לכרטיסים */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* החלת האנימציה על כרטיסים שונים */
+.card,
+.tool-card,
+.testimonial-card,
+.process .card,
+.consulting .card,
+.guides .card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* מקטע פתרונות מותאמים לכל סוג עסק */
+.solutions {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.1);
+  backdrop-filter: blur(2px);
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.solutions h3 {
+  color: #0abdc6;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.solutions .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.solutions .card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 170, 198, 0.2);
+  backdrop-filter: blur(2px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.solutions .card:hover {
+  transform: perspective(600px) rotateX(-5deg) rotateY(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.solutions .card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #00bfff, #ff4dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0abdc6;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.solutions .card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.solutions .card li {
+  margin-bottom: 0.6rem;
+  padding-right: 1.2rem;
+  position: relative;
+  text-shadow: 0 0 4px rgba(0, 188, 255, 0.25);
+}
+
+.solutions .card li::before {
+  content: '•';
+  position: absolute;
+  right: 0;
+  color: #0abdc6;
+}
+
 /* ===== Guides section bullet lists ===== */
 .guide-list {
   list-style: none;
