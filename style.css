@@ -1106,3 +1106,40 @@ section li {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* =========================================================
+ * 3D Navigation
+ *
+ * To make the primary navigation look more polished and professional
+ * on larger screens, we give each link its own semi‑transparent
+ * background, rounded corners and a subtle shadow. On hover the
+ * links rise slightly and the shadow deepens, giving a sense of
+ * depth. We also remove the old underline effect and add spacing
+ * around the nav icons for better readability. These styles only
+ * apply on screens wider than 768px so the mobile overlay menu
+ * remains unaffected.
+ */
+@media (min-width: 768px) {
+  .site-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.9rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+  }
+  .site-nav a::after {
+    display: none;
+  }
+  .site-nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.18);
+  }
+  .site-nav .nav-icon {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+}
