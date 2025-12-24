@@ -16,11 +16,16 @@ body {
     החדשים מורידים את אלפא מ‑0.15 ל‑0.10, מ‑0.10 ל‑0.07 ומ‑0.08 ל‑0.05
     למראה חלק ונעים יותר.
   */
+  /*
+    רקע הכוכבים הותאם לשיפור ביצועים: הורדנו את אפקט
+    ה־repeating-radial-gradient שהיה כבד יחסית והשארנו שלוש
+    שכבות של מעגלים עם נגיעות ניאון עדינות בעוצמה נמוכה יותר.
+    זה יוצר מראה נקי אך עדיין עתידני ומפחית עומס גרפי בדפדפן.
+  */
   background-image:
-    radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.10), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.10), transparent 60%),
-    radial-gradient(circle at 50% 50%, rgba(0, 128, 255, 0.07), transparent 70%),
-    repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 8px);
+    radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.08), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.08), transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(0, 128, 255, 0.05), transparent 70%);
   color: #fff;
   line-height: 1.6;
 }
@@ -760,6 +765,20 @@ section li {
 .header-cta:hover{
   transform: translateY(-1px);
   box-shadow: 0 0 28px rgba(0,198,255,.35);
+}
+
+/*
+ * Hide the header WhatsApp button on larger screens to prevent it from
+ * overflowing outside the header area. The hero section and footer
+ * provide clear calls to action, so the header button is redundant
+ * on desktop and sometimes causes layout issues when the navigation
+ * grows. It remains hidden on small screens via the existing max-width
+ * rule.
+ */
+@media (min-width: 768px) {
+  .header-cta {
+    display: none;
+  }
 }
 
 /* כדי שהתוכן לא ייכנס מתחת להדר */
