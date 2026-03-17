@@ -101,7 +101,7 @@ a:hover {
   color: #93c5fd;
 }
 
-.section-header h3 {
+.section-header h2 {
   font-size: 2.2rem;
   font-weight: 800;
   margin: 0 0 12px;
@@ -109,7 +109,7 @@ a:hover {
   line-height: 1.3;
 }
 
-.section-header.light h3 {
+.section-header.light h2 {
   color: #ffffff;
 }
 
@@ -563,7 +563,7 @@ a:hover {
   margin-bottom: 16px;
 }
 
-.card h4 {
+.card h3 {
   margin: 0 0 8px;
   font-size: 1.15rem;
   font-weight: 700;
@@ -727,7 +727,7 @@ a:hover {
   display: block;
 }
 
-.tool-card h4 {
+.tool-card h3 {
   margin: 0 0 6px;
   font-size: 1rem;
   font-weight: 700;
@@ -924,7 +924,7 @@ a:hover {
   margin: 0 auto 16px;
 }
 
-.process-step h4 {
+.process-step h3 {
   margin: 0 0 8px;
   font-size: 1.1rem;
   font-weight: 700;
@@ -959,7 +959,7 @@ a:hover {
   color: #fff;
 }
 
-.cta-box h3 {
+.cta-box h2 {
   font-size: 2rem;
   font-weight: 800;
   margin: 0 0 16px;
@@ -1062,7 +1062,7 @@ a:hover {
   line-height: 1;
 }
 
-.success-card h4 {
+.success-card h3 {
   margin: 0 0 8px;
   font-size: 1.1rem;
   font-weight: 700;
@@ -1240,7 +1240,7 @@ footer p {
 @media (max-width: 768px) {
   .section-padding { padding: 48px 0; }
 
-  .section-header h3 { font-size: 1.8rem; }
+  .section-header h2 { font-size: 1.8rem; }
 
   .hero-content h1 { font-size: 2.5rem; }
   .hero-content h2 { font-size: 1.2rem; }
@@ -1254,7 +1254,7 @@ footer p {
   .stat-number { font-size: 1.5rem; }
 
   .cta-box { padding: 40px 24px; }
-  .cta-box h3 { font-size: 1.6rem; }
+  .cta-box h2 { font-size: 1.6rem; }
 
   .benefits-grid {
     grid-template-columns: 1fr;
