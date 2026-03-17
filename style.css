@@ -1,5 +1,9 @@
 /* עיצוב בסיסי לאתר של איציק הרוש */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -789,22 +793,23 @@ section li {
 /* Back to top button */
 .back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   background: linear-gradient(90deg, #00bfff, #ff4dff);
   color: #fff;
-  padding: 8px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  padding: 10px 14px;
+  border-radius: 24px;
+  font-size: 0.85rem;
   text-decoration: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  opacity: 0.6;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 998;
 }
 
 .back-to-top:hover {
-  opacity: 1;
+  opacity: 1 !important;
   transform: translateY(-3px);
 }
 
@@ -812,12 +817,6 @@ section li {
 .emoji {
   margin-left: 0.4rem;
   font-size: 1.3rem;
-}
-
-/* מקטעי קריאה לפעולה כלליים שנמצאים בין המקטעים */
-.section-cta {
-  text-align: center;
-  margin: 2rem auto;
 }
 
 .cta-banner {
@@ -848,16 +847,6 @@ section li {
   text-align: center;
 }
 
-/*
- * הסתרת כפתורי קריאה לפעולה חוזרים
- *
- * בעבר היו באתר כפתורים חוזרים מסוג `section-cta` אחרי כל מקטע. לאחר בקשת המשתמש
- * לצמצם את עומס הכפתורים, אנו מסתירים אותם לגמרי באמצעות CSS. כפתורי ההרואו,
- * ההדר וההצעה החינמית ממשיכים להופיע כרגיל, והעמוד נשאר נקי וממוקד יותר.
- */
-.section-cta {
-  display: none;
-}
 
 .free-offer h3 {
   color: #0abdc6;
@@ -930,25 +919,14 @@ section li {
   }
 }
 
-/* החלת האנימציה על כרטיסים שונים */
-/*
- * Apply the fade-in animation to all interactive cards. This list
- * originally included the services, tools, testimonials, process,
- * consulting and guides cards. We extend it to FAQ items and
- * success cards to ensure these sections animate consistently as
- * they come into view.
- */
-.card,
-.tool-card,
-.testimonial-card,
-.process .card,
-.consulting .card,
-.guides .card,
-.faq-item,
-.success-card {
+/* אנימציית הופעה בגלילה – IntersectionObserver */
+.scroll-hidden {
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
+  transform: translateY(24px);
+}
+
+.scroll-visible {
+  animation: fadeInUp 0.6s ease forwards;
 }
 
 /* מקטע פתרונות מותאמים לכל סוג עסק */
@@ -1073,21 +1051,58 @@ section li {
   text-shadow: 0 0 6px rgba(0, 188, 255, 0.3);
 }
 
+/* FAQ אקורדיון עם details/summary */
 .faq-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+  transition: background 0.3s ease;
 }
 
-.faq-item h4 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+.faq-item[open] {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.faq-item summary {
+  font-size: 1.15rem;
+  font-weight: 600;
   color: #0abdc6;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.3s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  color: #00c6ff;
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item summary:hover {
+  color: #00f7ff;
 }
 
 .faq-item p {
   font-size: 0.95rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #ddd;
   text-shadow: 0 0 4px rgba(0, 188, 255, 0.25);
+  padding: 0 1.2rem 1rem;
+  margin: 0;
 }
 
 .success-cards {
@@ -1161,4 +1176,42 @@ section li {
     margin-left: 0.3rem;
     margin-right: 0.3rem;
   }
+
+  /* מניעת גלישה של הניווט – גלילה אופקית במסכים בינוניים */
+  .site-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .site-nav a {
+    white-space: nowrap;
+    font-size: 0.82rem;
+  }
 }
+
+/* כפתור וואטסאפ צף */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  z-index: 998;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
