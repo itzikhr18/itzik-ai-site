@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>איציק הרוש - בינה מלאכותית לעסקים</title>
   <meta name="description" content="איציק הרוש - מומחה לבינה מלאכותית פרקטית לעסקים קטנים. הדרכות, כלים וייעוץ מותאם אישית שיעזרו לך להפוך AI להצלחה בעסק שלך.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- Open Graph and Twitter card metadata for link previews -->
   <meta property="og:title" content="איציק הרוש - מומחה לבינה מלאכותית פרקטית לעסקים קטנים" />
@@ -18,374 +21,569 @@
   <meta name="twitter:image" content="https://itzikhr18.github.io/itzik-ai-site/og-image.jpg" />
 </head>
 <body id="top">
-  <!-- Header with logo, navigation and CTA -->
+  <!-- Header -->
   <header class="site-header">
     <a class="brand" href="#top" aria-label="דף הבית">
       <img src="logo.png" alt="איציק דיגיטל" class="brand-logo">
+      <span class="brand-name">איציק הרוש</span>
     </a>
-    <!-- כפתור המבורגר ותפריט ניווט -->
-    <!-- תיבת סימון נסתרת שתשלוט בתצוגת התפריט במובייל -->
     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-    <!-- כפתור המבורגר שמופיע במסכים קטנים -->
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="פתח תפריט ניווט">&#9776;</label>
-    <!-- תפריט ניווט ראשי -->
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="פתח תפריט ניווט">
+      <span class="hamburger"></span>
+    </label>
     <nav class="site-nav">
-      <a href="#services"><span class="nav-icon">🛠️</span> שירותים</a>
-      <a href="#guides"><span class="nav-icon">📚</span> ידע וכלים</a>
-      <a href="#consulting"><span class="nav-icon">🤝</span> ליווי וייעוץ</a>
-      <a href="#process"><span class="nav-icon">⚙️</span> איך זה עובד</a>
-      <a href="#free-offer"><span class="nav-icon">🎁</span> בדיקת התאמה</a>
-      <a href="#testimonials"><span class="nav-icon">💬</span> המלצות</a>
-      <a href="#faq"><span class="nav-icon">❓</span> שאלות נפוצות</a>
-      <a href="#success"><span class="nav-icon">🏆</span> סיפורי הצלחה</a>
-      <a href="#contact"><span class="nav-icon">📞</span> צור קשר</a>
+      <a href="#services">שירותים</a>
+      <a href="#solutions">פתרונות</a>
+      <a href="#guides">ידע וכלים</a>
+      <a href="#consulting">ליווי וייעוץ</a>
+      <a href="#process">איך זה עובד</a>
+      <a href="#testimonials">המלצות</a>
+      <a href="#faq">שאלות נפוצות</a>
+      <a href="#contact">צור קשר</a>
     </nav>
     <a class="header-cta" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%93%D7%A2%D7%AA%20%D7%90%D7%99%D7%9A%20%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%99%D7%9B%D7%95%D7%9C%D7%94%20%D7%9C%D7%A9%D7%93%D7%A8%D7%92%20%D7%90%D7%AA%20%D7%94%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%9A">
-      דבר איתי בוואטסאפ
+      דבר איתי
     </a>
   </header>
-  <header class="hero">
+
+  <!-- Hero -->
+  <section class="hero">
     <div class="overlay"></div>
-    <!-- רקע הירו עם תמונה של איציק -->
-    <!-- תמונת ההירו נשמרת בשורש הריפו, לכן נתיב קצר -->
     <img src="hero_new.jpg" alt="איציק הרוש" class="hero-bg" fetchpriority="high">
     <div class="hero-content">
+      <span class="hero-badge">מומחה בינה מלאכותית לעסקים</span>
       <h1>איציק הרוש</h1>
-      <!-- כותרת משנה המחברת רגש ופתרון: בלי כאב ראש -->
       <h2>בינה מלאכותית בלי כאב ראש</h2>
-      <!-- מסר ממוקד: חוסכים זמן, עובדים חכם ונשארים בשליטה -->
       <p>כלים פרקטיים לעסקים קטנים שרוצים לחסוך זמן, לעבוד חכם ולהישאר בשליטה.</p>
-      <!-- קריאה לפעולה אחידה עם ניסוח מזמין -->
-      <a href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%90%D7%99%D7%9A%20%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%99%D7%9B%D7%95%D7%9C%D7%94%20%D7%9C%D7%A2%D7%96%D7%95%D7%A8%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99" class="cta">דבר איתי בוואטסאפ</a>
+      <div class="hero-buttons">
+        <a href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%90%D7%99%D7%9A%20%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%99%D7%9B%D7%95%D7%9C%D7%94%20%D7%9C%D7%A2%D7%96%D7%95%D7%A8%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99" class="btn btn-primary">בדיקת התאמה חינם</a>
+        <a href="#services" class="btn btn-outline">גלה עוד</a>
+      </div>
     </div>
-  </header>
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
 
-  <!-- מקטע קישורים מהירים: כרטיסי פעולה במקום ההירו -->
-  <!-- כפתורי ניווט מרכזיים בתוך ההירו -->
-  <!-- הכפתורים הועברו אל ההירו כדי להדגיש פעולות עיקריות מיד עם הכניסה לאתר -->
-  <div class="hero-cta-grid">
-    <a href="#services" class="hero-cta blue">
-      שירותי AI
-      <span>התאמה אישית לעסק</span>
-    </a>
-    <a href="#guides" class="hero-cta pink">
-      מאגר ידע
-      <span>מידע ומשאבים בחינם</span>
-    </a>
-    <a href="#consulting" class="hero-cta green">
-      ייעוץ AI
-      <span>ליווי וייעוץ עסקי</span>
-    </a>
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-number">50+</span>
+      <span class="stat-label">עסקים שודרגו</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">95%</span>
+      <span class="stat-label">שביעות רצון</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">24/7</span>
+      <span class="stat-label">תמיכה וליווי</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">3+</span>
+      <span class="stat-label">שנות ניסיון</span>
+    </div>
   </div>
 
-
-  <section id="services" class="services">
-    <h3>מה אני מציע?</h3>
-    <div class="cards">
-      <div class="card">
-        <h4><span class="emoji">🎓</span> הדרכות מותאמות אישית</h4>
-        <p>נלמד יד ביד כיצד להפוך את הבינה המלאכותית לכוח מניע בעסק שלך – בקצב ובסגנון שלך.</p>
+  <!-- Services -->
+  <section id="services" class="services section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">שירותים</span>
+        <h3>מה אני מציע?</h3>
+        <p class="section-subtitle">פתרונות AI מותאמים אישית לכל סוג עסק</p>
       </div>
-      <div class="card">
-        <h4><span class="emoji">🧰</span> כלים ותבניות מוכנים</h4>
-        <p>חבילת פרומפטים ופתרונות מוכנים שיעזרו לך לייעל תהליכים ולחסוך זמן יקר.</p>
-      </div>
-      <div class="card">
-        <h4><span class="emoji">🤝</span> ליווי והטמעה רציפה</h4>
-        <p>אני נמצא איתך לאורך הדרך – מהרעיון הראשוני ועד להפעלה מלאה, כדי לוודא שכל שלב עובד חלק.</p>
+      <div class="cards-grid cols-3">
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h4>הדרכות מותאמות אישית</h4>
+          <p>נלמד יד ביד כיצד להפוך את הבינה המלאכותית לכוח מניע בעסק שלך – בקצב ובסגנון שלך.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧰</div>
+          <h4>כלים ותבניות מוכנים</h4>
+          <p>חבילת פרומפטים ופתרונות מוכנים שיעזרו לך לייעל תהליכים ולחסוך זמן יקר.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h4>ליווי והטמעה רציפה</h4>
+          <p>אני נמצא איתך לאורך הדרך – מהרעיון הראשוני ועד להפעלה מלאה, כדי לוודא שכל שלב עובד חלק.</p>
+        </div>
       </div>
     </div>
   </section>
+
   <!-- Back-to-top button -->
-  <a href="#top" class="back-to-top" aria-label="חזרה לראש העמוד">⬆️ למעלה</a>
-  <!-- מקטע חדש: פתרונות מותאמים לכל סוג עסק -->
-  <section class="solutions">
-    <h3>פתרונות לכל סוג עסק</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>עצמאים ובעלי מקצוע</h4>
-        <ul>
-          <li><strong>כתיבה ושיווק</strong> – שימוש ב‑ChatGPT לכתיבת מיילים, פוסטים ותוכן שיווקי.</li>
-          <li><strong>תזכורות והתראות</strong> – כלים אוטומטיים לתיאומי פגישות ותזכורות ללקוחות.</li>
-          <li><strong>ניתוח הכנסות</strong> – דוחות פשוטים שמראים לך איפה אתה עומד ומה צפוי קדימה.</li>
-        </ul>
+  <a href="#top" class="back-to-top" aria-label="חזרה לראש העמוד">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </a>
+
+  <!-- Solutions -->
+  <section id="solutions" class="solutions section-padding bg-dark">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">פתרונות</span>
+        <h3>פתרונות לכל סוג עסק</h3>
+        <p class="section-subtitle">בין אם אתה עצמאי, בעל חנות או נותן שירות – יש פתרון AI שמתאים בדיוק לך</p>
       </div>
-      <div class="card">
-        <h4>חנויות ומסחר</h4>
-        <ul>
-          <li><strong>שירות לקוחות 24/7</strong> – בוטים שמגיבים ללקוחות בכל עת ומעלים את שביעות הרצון.</li>
-          <li><strong>המלצות מוצרים</strong> – מודלים שמציעים ללקוחות מוצרים משלימים ומגדילים מכירות.</li>
-          <li><strong>ניתוח מכירות</strong> – מעקב בזמן אמת אחר מלאי ומכירות כדי לקבל החלטות מושכלות.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>עסקי שירות</h4>
-        <ul>
-          <li><strong>ייעוץ אוטומטי</strong> – כלים שמייצרים הצעות מחיר ותוכניות עבודה בהתאם לשאלות הלקוח.</li>
-          <li><strong>ניהול משימות</strong> – מערכות אוטומציה שדואגות שלא תשכח אף משימה.</li>
-          <li><strong>מדידת שביעות רצון</strong> – איסוף משוב ומדידה מתמדת כדי לשפר את איכות השירות.</li>
-        </ul>
+      <div class="cards-grid cols-3">
+        <div class="card card-dark">
+          <h4>עצמאים ובעלי מקצוע</h4>
+          <ul>
+            <li><strong>כתיבה ושיווק</strong> – שימוש ב‑ChatGPT לכתיבת מיילים, פוסטים ותוכן שיווקי.</li>
+            <li><strong>תזכורות והתראות</strong> – כלים אוטומטיים לתיאומי פגישות ותזכורות ללקוחות.</li>
+            <li><strong>ניתוח הכנסות</strong> – דוחות פשוטים שמראים לך איפה אתה עומד ומה צפוי קדימה.</li>
+          </ul>
+        </div>
+        <div class="card card-dark">
+          <h4>חנויות ומסחר</h4>
+          <ul>
+            <li><strong>שירות לקוחות 24/7</strong> – בוטים שמגיבים ללקוחות בכל עת ומעלים את שביעות הרצון.</li>
+            <li><strong>המלצות מוצרים</strong> – מודלים שמציעים ללקוחות מוצרים משלימים ומגדילים מכירות.</li>
+            <li><strong>ניתוח מכירות</strong> – מעקב בזמן אמת אחר מלאי ומכירות כדי לקבל החלטות מושכלות.</li>
+          </ul>
+        </div>
+        <div class="card card-dark">
+          <h4>עסקי שירות</h4>
+          <ul>
+            <li><strong>ייעוץ אוטומטי</strong> – כלים שמייצרים הצעות מחיר ותוכניות עבודה בהתאם לשאלות הלקוח.</li>
+            <li><strong>ניהול משימות</strong> – מערכות אוטומציה שדואגות שלא תשכח אף משימה.</li>
+            <li><strong>מדידת שביעות רצון</strong> – איסוף משוב ומדידה מתמדת כדי לשפר את איכות השירות.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="why">
-    <h3>למה לעבוד איתי?</h3>
-    <div class="cards">
-      <div class="card">
-        <h4><span class="emoji">❤️</span> אהבה אמיתית לתחום</h4>
-        <p>אני פועל מתוך תשוקה וסקרנות לבינה מלאכותית ודואג להביא את אותה ההתלהבות לכל פרויקט.</p>
+  <!-- Why Me -->
+  <section class="why section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">למה אני</span>
+        <h3>למה לעבוד איתי?</h3>
       </div>
-      <div class="card">
-        <h4><span class="emoji">⚙️</span> גישה פרקטית</h4>
-        <p>אני מתמקד בפתרונות ישימים שמספקים תוצאות מדידות ולא רק דיבורים.</p>
-      </div>
-      <div class="card">
-        <h4><span class="emoji">😊</span> יחס אישי ושפה פשוטה</h4>
-        <p>אני מדבר בשפה מובנת, נותן ליווי אישי ומדגיש את הצרכים שלך.</p>
+      <div class="cards-grid cols-3">
+        <div class="card">
+          <div class="card-icon">❤️</div>
+          <h4>אהבה אמיתית לתחום</h4>
+          <p>אני פועל מתוך תשוקה וסקרנות לבינה מלאכותית ודואג להביא את אותה ההתלהבות לכל פרויקט.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚙️</div>
+          <h4>גישה פרקטית</h4>
+          <p>אני מתמקד בפתרונות ישימים שמספקים תוצאות מדידות ולא רק דיבורים.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">😊</div>
+          <h4>יחס אישי ושפה פשוטה</h4>
+          <p>אני מדבר בשפה מובנת, נותן ליווי אישי ומדגיש את הצרכים שלך.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="about">
-    <h3>מי אני</h3>
-    <p>מאז שנחשפתי לעולם הבינה המלאכותית נשאבתי פנימה. אני לא מפתח ולא מתכנת – אני בעל עסק שלמד להשתמש בבינה מלאכותית כדי לעבוד פחות ולהרוויח יותר. כיום אני מאמין שאפשר להפוך רעיון גדול לכלי פשוט ומועיל שמקדם את העסק שלך. המטרה שלי היא לפתוח בפניך עולם של אפשרויות ולהעביר ידע בצורה נגישה ונעימה, מתוך ניסיון אישי.</p>
+  <!-- About -->
+  <section class="about section-padding">
+    <div class="container">
+      <div class="about-content">
+        <div class="section-header">
+          <span class="section-tag">קצת עליי</span>
+          <h3>מי אני</h3>
+        </div>
+        <p class="about-text">מאז שנחשפתי לעולם הבינה המלאכותית נשאבתי פנימה. אני לא מפתח ולא מתכנת – אני בעל עסק שלמד להשתמש בבינה מלאכותית כדי לעבוד פחות ולהרוויח יותר. כיום אני מאמין שאפשר להפוך רעיון גדול לכלי פשוט ומועיל שמקדם את העסק שלך. המטרה שלי היא לפתוח בפניך עולם של אפשרויות ולהעביר ידע בצורה נגישה ונעימה, מתוך ניסיון אישי.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- מקטע חדש: כיצד AI יכול לסייע לעסקים קטנים ועצמאיים -->
-  <section class="ai-benefits">
-    <h3>איך בינה מלאכותית יכולה לעזור לעסק שלך</h3>
-    <ul>
-      <li>שירות לקוחות אוטומטי – צ׳אטבוטים באתר ובטלפון יכולים לענות על שאלות נפוצות, לקבל הזמנות ולהפנות פניות לגורם הנכון.</li>
-      <li>שיווק ממוקד – מודלים מנתחים נתונים ומאפשרים לך ליצור מודעות ופרסומים בהתאמה אישית.</li>
-      <li>יצירת תכנים – כלים מתקדמים מייצרים טקסטים, מיילים ופוסטים במהירות ובאיכות גבוהה.</li>
-      <li>ניתוח נתונים וחיזוי – מערכות שמנתחות את הנתונים שלך ומספקות תובנות להחלטות עסקיות טובות יותר.</li>
-      <li>אוטומציה של תהליכים – בוטים וכלים מסכמים ישיבות, מנהלים לוחות זמנים ומבצעים משימות חוזרות.</li>
-      <li>חיסכון בזמן וכסף – עסקים מדווחים על חיסכון של שעות בכל שבוע ועל שיפור ביצועים משמעותי בזכות פתרונות AI.</li>
-    </ul>
+  <!-- AI Benefits -->
+  <section class="ai-benefits section-padding bg-gradient">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">יתרונות</span>
+        <h3>איך בינה מלאכותית יכולה לעזור לעסק שלך</h3>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">💬</div>
+          <div>
+            <strong>שירות לקוחות אוטומטי</strong>
+            <p>צ׳אטבוטים באתר ובטלפון יכולים לענות על שאלות נפוצות, לקבל הזמנות ולהפנות פניות לגורם הנכון.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🎯</div>
+          <div>
+            <strong>שיווק ממוקד</strong>
+            <p>מודלים מנתחים נתונים ומאפשרים לך ליצור מודעות ופרסומים בהתאמה אישית.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">✍️</div>
+          <div>
+            <strong>יצירת תכנים</strong>
+            <p>כלים מתקדמים מייצרים טקסטים, מיילים ופוסטים במהירות ובאיכות גבוהה.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">📊</div>
+          <div>
+            <strong>ניתוח נתונים וחיזוי</strong>
+            <p>מערכות שמנתחות את הנתונים שלך ומספקות תובנות להחלטות עסקיות טובות יותר.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🔄</div>
+          <div>
+            <strong>אוטומציה של תהליכים</strong>
+            <p>בוטים וכלים מסכמים ישיבות, מנהלים לוחות זמנים ומבצעים משימות חוזרות.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">⏱️</div>
+          <div>
+            <strong>חיסכון בזמן וכסף</strong>
+            <p>עסקים מדווחים על חיסכון של שעות בכל שבוע ועל שיפור ביצועים משמעותי בזכות פתרונות AI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-      <!-- מקטע חדש: מבט לעתיד על בינה מלאכותית -->
-      <section class="future">
+  <!-- Future -->
+  <section class="future section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">חזון</span>
         <h3>מבט לעתיד</h3>
-        <p>הבינה המלאכותית צפויה להיות חלק בלתי נפרד מכל עסק. הנה כמה מגמות הצפויות בשנים הקרובות:</p>
-        <ul>
-          <li>כלים אוטונומיים לניהול משימות שיווק, שירות ותפעול – מערכות שיודעות לקבל החלטות ולבצע פעולות ללא מעורבות אנושית.</li>
-          <li>ניתוחים מתקדמים בזמן אמת – מודלים שמנתחים את הנתונים שלך ומספקים תובנות והתראות מיידיות להחלטות עסקיות.</li>
-          <li>חוויות לקוח מותאמות אישית – מערכות שלומדות כל לקוח ומציעות לו תכנים ושירותים מותאמים בדיוק לצרכיו.</li>
-        </ul>
-      </section>
+        <p class="section-subtitle">הבינה המלאכותית צפויה להיות חלק בלתי נפרד מכל עסק. הנה כמה מגמות הצפויות בשנים הקרובות:</p>
+      </div>
+      <div class="future-items">
+        <div class="future-item">
+          <div class="future-number">01</div>
+          <div>
+            <strong>כלים אוטונומיים</strong>
+            <p>מערכות לניהול משימות שיווק, שירות ותפעול שיודעות לקבל החלטות ולבצע פעולות ללא מעורבות אנושית.</p>
+          </div>
+        </div>
+        <div class="future-item">
+          <div class="future-number">02</div>
+          <div>
+            <strong>ניתוחים מתקדמים בזמן אמת</strong>
+            <p>מודלים שמנתחים את הנתונים שלך ומספקים תובנות והתראות מיידיות להחלטות עסקיות.</p>
+          </div>
+        </div>
+        <div class="future-item">
+          <div class="future-number">03</div>
+          <div>
+            <strong>חוויות לקוח מותאמות אישית</strong>
+            <p>מערכות שלומדות כל לקוח ומציעות לו תכנים ושירותים מותאמים בדיוק לצרכיו.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- מקטע המלצות מלקוחות -->
-      <section id="testimonials" class="testimonials">
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">המלצות</span>
         <h3>מה לקוחות אומרים</h3>
-        <div class="cards testimonials-cards">
-          <div class="card testimonial-card">
-            <p>״באתי סקפטי לגמרי – חשבתי שבינה מלאכותית זה רק לגדולים. אחרי שיחה קצרה הבנתי כמה זמן וכסף אני יכול לחסוך. היום הצ׳אטבוט שבנינו יחד עונה ללקוחות ונותן שירות 24/7״</p>
-            <span class="client">יואב, בעל חנות אונליין</span>
-          </div>
-          <div class="card testimonial-card">
-            <p>"כמטפלת, היה לי קשה לעמוד בעומס. איציק לימד אותי להשתמש בכלים אוטומטיים לסיכום פגישות ותזכורות, וזה הוריד ממני הרבה לחץ. ההדרכות היו ברורות והחיבור אישי"</p>
-            <span class="client">מירי, בעלת קליניקה</span>
-          </div>
-          <div class="card testimonial-card">
-            <p>"כיזם צעיר רציתי להטמיע AI אבל לא ידעתי מאיפה להתחיל. איציק עשה סדר, בנה תהליך ומצא כלים שמתאימים ממש לצוות שלנו. התוצאות: חיסכון אדיר ושירות טוב יותר"</p>
-            <span class="client">רן, מנכ״ל סטארט‑אפ</span>
+      </div>
+      <div class="cards-grid cols-3">
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>באתי סקפטי לגמרי – חשבתי שבינה מלאכותית זה רק לגדולים. אחרי שיחה קצרה הבנתי כמה זמן וכסף אני יכול לחסוך. היום הצ׳אטבוט שבנינו יחד עונה ללקוחות ונותן שירות 24/7</p>
+          <div class="client-info">
+            <div class="client-avatar">י</div>
+            <div>
+              <span class="client-name">יואב</span>
+              <span class="client-role">בעל חנות אונליין</span>
+            </div>
           </div>
         </div>
-      </section>
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>כמטפלת, היה לי קשה לעמוד בעומס. איציק לימד אותי להשתמש בכלים אוטומטיים לסיכום פגישות ותזכורות, וזה הוריד ממני הרבה לחץ. ההדרכות היו ברורות והחיבור אישי</p>
+          <div class="client-info">
+            <div class="client-avatar">מ</div>
+            <div>
+              <span class="client-name">מירי</span>
+              <span class="client-role">בעלת קליניקה</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>כיזם צעיר רציתי להטמיע AI אבל לא ידעתי מאיפה להתחיל. איציק עשה סדר, בנה תהליך ומצא כלים שמתאימים ממש לצוות שלנו. התוצאות: חיסכון אדיר ושירות טוב יותר</p>
+          <div class="client-info">
+            <div class="client-avatar">ר</div>
+            <div>
+              <span class="client-name">רן</span>
+              <span class="client-role">מנכ״ל סטארט‑אפ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- מקטע חדש: לוגואים וכלים מומלצים -->
-  
-
-      <!-- מקטע חדש: תכניות ליווי וייעוץ -->
-      <section id="consulting" class="consulting">
+  <!-- Consulting -->
+  <section id="consulting" class="consulting section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ייעוץ</span>
         <h3>תכניות ליווי וייעוץ</h3>
-        <div class="cards">
-          <div class="card">
-            <h4><span class="emoji">📋</span> תכנית ייעוץ מותאמת אישית</h4>
-            <p>ליווי אישי מותאם לצרכים הייחודיים של העסק שלך, מניתוח ראשוני ועד לשילוב מלא של פתרונות AI.</p>
-          </div>
-          <div class="card">
-            <h4><span class="emoji">🔧</span> ליווי בהטמעת כלים</h4>
-            <p>תמיכה שוטפת בהגדרת כלים, תהליך ההטמעה והדרכת הצוות להבטחת הצלחה ארוכת טווח.</p>
-          </div>
-          <div class="card">
-            <h4><span class="emoji">🛠</span> תמיכה ותחזוקה שוטפת</h4>
-            <p>שירותי תחזוקה ותמיכה במערכות קיימות, כולל התאמות ועדכונים לתהליכים עתידיים.</p>
-          </div>
+      </div>
+      <div class="cards-grid cols-3">
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <h4>תכנית ייעוץ מותאמת אישית</h4>
+          <p>ליווי אישי מותאם לצרכים הייחודיים של העסק שלך, מניתוח ראשוני ועד לשילוב מלא של פתרונות AI.</p>
         </div>
-      </section>
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h4>ליווי בהטמעת כלים</h4>
+          <p>תמיכה שוטפת בהגדרת כלים, תהליך ההטמעה והדרכת הצוות להבטחת הצלחה ארוכת טווח.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛠</div>
+          <h4>תמיכה ותחזוקה שוטפת</h4>
+          <p>שירותי תחזוקה ותמיכה במערכות קיימות, כולל התאמות ועדכונים לתהליכים עתידיים.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- מקטע חדש: מאמרים ומדריכים -->
-      <section id="guides" class="guides">
+  <!-- Guides -->
+  <section id="guides" class="guides section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ידע</span>
         <h3>ידע וכלים</h3>
-        <div class="cards">
-          <div class="card">
-            <h4><span class="emoji">🧠</span> מה חדש בעולם ה‑AI</h4>
-            <p>עדכונים וסקירות על המגמות החמות בבינה מלאכותית שיכולות להפוך למנועי צמיחה עבור העסק שלך.</p>
-            <div class="tags">
-              <span class="tag practical">פרקטי</span>
-              <span class="tag beginner">למתחילים</span>
-              <span class="tag insight">חדשני</span>
-            </div>
-            <ul class="guide-list">
-              <li><strong>מודלים גנרטיביים</strong> – כלים ליצירת תוכן שיווקי, דימויים וקופי במהירות ובדיוק.</li>
-              <li><strong>ניתוח בזמן אמת</strong> – פלטפורמות שמפיקות תובנות מיידיות מתוך נתונים כדי לשפר החלטות.</li>
-              <li><strong>אוטומציה</strong> – שירותים שחוסכים זמן ומייעלים את התהליכים התפעוליים שלך.</li>
-              <li><strong>חוויה מותאמת אישית</strong> – מערכות שמבינות את הלקוחות ומתאימות להם מסרים ותוכן.</li>
-            </ul>
-            <a class="mini-cta" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A2%D7%9C%20%D7%97%D7%93%D7%A9%D7%95%D7%AA%20AI%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%AA%D7%90%D7%99%D7%9D%20%D7%90%D7%AA%20%D7%94%D7%A4%D7%AA%D7%A8%D7%95%D7%9F%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">שיחת התאמה אישית</a>
+      </div>
+      <div class="cards-grid cols-3">
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h4>מה חדש בעולם ה‑AI</h4>
+          <p>עדכונים וסקירות על המגמות החמות בבינה מלאכותית שיכולות להפוך למנועי צמיחה עבור העסק שלך.</p>
+          <div class="tags">
+            <span class="tag tag-blue">פרקטי</span>
+            <span class="tag tag-purple">למתחילים</span>
+            <span class="tag tag-amber">חדשני</span>
           </div>
-          <div class="card">
-            <h4><span class="emoji">🤖</span> בניית צ׳אטבוט משלכם</h4>
-            <p>תהליך מובנה ליצירת בוט שמייצר ערך אמיתי לעסק שלך.</p>
-            <div class="tags">
-              <span class="tag practical">פרקטי</span>
-              <span class="tag beginner">למתחילים</span>
-              <span class="tag time-saving">חוסך זמן</span>
-            </div>
-            <ul class="guide-list">
-              <li><strong>הגדרת המטרה</strong> – מיפוי הצורך והחלטה מה הבוט יודע לעשות ומהו סגנון השיחה שלו.</li>
-              <li><strong>תכנון הדיאלוג</strong> – יצירת תסריטי שיחה ושאלות בסיסיות, תוך שימוש בפרומפטים נכונים.</li>
-              <li><strong>שילוב מידע קיים</strong> – חיבור למאגרי ידע, מסמכים ומערכות קיימות לקבלת תשובות מדויקות.</li>
-              <li><strong>פריסה ובקרה</strong> – חיבור לאתר, וואטסאפ או פייסבוק, בדיקות, מדידה ושיפור מתמיד.</li>
-            </ul>
-            <a class="mini-cta" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A2%D7%9C%20%D7%A6%D7%90%D7%98%D7%91%D7%95%D7%98%D7%99%D7%9D%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%91%D7%A0%D7%95%D7%AA%20%D7%90%D7%97%D7%93%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">שיחת התאמה אישית</a>
-          </div>
-          <div class="card">
-            <h4><span class="emoji">📱</span> הפיכת שיחה לאפליקציה חיה</h4>
-            <p>המרת רעיון או שיחה לאפליקציה שפועלת עבורכם מאחורי הקלעים.</p>
-            <div class="tags">
-              <span class="tag practical">פרקטי</span>
-              <span class="tag insight">חדשני</span>
-              <span class="tag time-saving">חוסך זמן</span>
-            </div>
-            <ul class="guide-list">
-              <li><strong>לכידת המידע</strong> – תיעוד השיחה או הרעיון והפיכתם לתוכנית פעולה ברורה.</li>
-              <li><strong>שימוש בכלי אוטומציה</strong> – חיבור לשירותים שמבצעים פעולות במקומכם (שליחת מיילים, תזכורות ועוד).</li>
-              <li><strong>אינטגרציה למערכות</strong> – חיבור ל‑CRM, מערכות שיווק ומסדי נתונים כדי לאחד תהליכים.</li>
-              <li><strong>הפצה וניטור</strong> – הטמעה באתר או באפליקציה ומעקב אחר ביצועים לשיפור מתמיד.</li>
-            </ul>
-            <a class="mini-cta" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A2%D7%9C%20%D7%94%D7%A4%D7%99%D7%9B%D7%AA%20%D7%A9%D7%99%D7%97%D7%94%20%D7%9C%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C%20%D7%91%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">שיחת התאמה אישית</a>
-          </div>
+          <ul class="guide-list">
+            <li><strong>מודלים גנרטיביים</strong> – כלים ליצירת תוכן שיווקי, דימויים וקופי במהירות ובדיוק.</li>
+            <li><strong>ניתוח בזמן אמת</strong> – פלטפורמות שמפיקות תובנות מיידיות מתוך נתונים כדי לשפר החלטות.</li>
+            <li><strong>אוטומציה</strong> – שירותים שחוסכים זמן ומייעלים את התהליכים התפעוליים שלך.</li>
+            <li><strong>חוויה מותאמת אישית</strong> – מערכות שמבינות את הלקוחות ומתאימות להם מסרים ותוכן.</li>
+          </ul>
+          <a class="card-link" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A2%D7%9C%20%D7%97%D7%93%D7%A9%D7%95%D7%AA%20AI%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%AA%D7%90%D7%99%D7%9D%20%D7%90%D7%AA%20%D7%94%D7%A4%D7%AA%D7%A8%D7%95%D7%9F%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">שיחת התאמה אישית ←</a>
         </div>
-      </section>
-<section class="ai-tools">
-    <h3>כלים מומלצים</h3>
-    <div class="tools-cards cards">
-      <!-- כרטיס כלי: OpenAI / ChatGPT -->
-      <div class="card tool-card">
-        <img src="openai_logo.png" alt="OpenAI Logo" loading="lazy">
-        <h4>ChatGPT / OpenAI</h4>
-        <p>מודל שיחה מתקדם המסוגל לייצר תכנים, לענות על שאלות ולפתח רעיונות חדשים עבורך.</p>
-      </div>
-      <!-- כרטיס כלי: Anthropic / Claude -->
-      <div class="card tool-card">
-        <img src="anthropic_logo.png" alt="Anthropic Logo" loading="lazy">
-        <h4>Claude (Anthropic)</h4>
-        <p>עוזר AI בטוח ואתי ליצירת טקסטים, סיעור מוחות והרחבת החשיבה היצירתית.</p>
-      </div>
-      <!-- כרטיס כלי: Hugging Face -->
-      <div class="card tool-card">
-        <img src="hugging_face_logo.png" alt="Hugging Face Logo" loading="lazy">
-        <h4>Hugging Face</h4>
-        <p>קהילה ופלטפורמה המאפשרות שימוש קל במודלי שפה וכלי למידת מכונה בקוד פתוח.</p>
-      </div>
-      <!-- כרטיס כלי: Gemini -->
-      <div class="card tool-card">
-        <img src="gemini_logo.png" alt="Gemini Logo" loading="lazy">
-        <h4>Gemini</h4>
-        <p>הדור הבא של מודלי הגנרטיב מבית Google – מתאים ליצירת תוכן, תובנות וניתוחים מתקדמים.</p>
-      </div>
-      <!-- כרטיס כלי: NotebookLM -->
-      <div class="card tool-card">
-        <img src="notebooklm_logo.png" alt="NotebookLM Logo" loading="lazy">
-        <h4>NotebookLM</h4>
-        <p>כלי חכם מבית Google לתיעוד, סיכום וארגון מידע שמפשט את תהליך המחקר והלמידה.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- מקטע חדש: איך זה עובד? תהליך עבודה בשלושה צעדים -->
-  <section id="process" class="process">
-    <h3>איך זה עובד?</h3>
-    <div class="cards">
-      <div class="card">
-        <h4><span class="emoji">📞</span> מדברים בוואטסאפ</h4>
-        <p>פגישת היכרות קצרה שבה נבין את האתגרים והיעדים שלך ונעשה מיפוי ראשוני של הצרכים.</p>
-      </div>
-      <div class="card">
-        <h4><span class="emoji">🧭</span> ממפים את העסק</h4>
-        <p>יחד נגדיר את המשימות והתהליכים שיכולים להרוויח מהטמעת בינה מלאכותית ונבחר את הכלים המתאימים.</p>
-      </div>
-      <div class="card">
-        <h4><span class="emoji">🚀</span> בונים פתרון פרקטי</h4>
-        <p>נבנה פתרון AI מותאם אישית, נטמיע אותו ונלווה אותך לוודא שכל דבר עובד חלק ומוסיף ערך.</p>
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h4>בניית צ׳אטבוט משלכם</h4>
+          <p>תהליך מובנה ליצירת בוט שמייצר ערך אמיתי לעסק שלך.</p>
+          <div class="tags">
+            <span class="tag tag-blue">פרקטי</span>
+            <span class="tag tag-purple">למתחילים</span>
+            <span class="tag tag-teal">חוסך זמן</span>
+          </div>
+          <ul class="guide-list">
+            <li><strong>הגדרת המטרה</strong> – מיפוי הצורך והחלטה מה הבוט יודע לעשות ומהו סגנון השיחה שלו.</li>
+            <li><strong>תכנון הדיאלוג</strong> – יצירת תסריטי שיחה ושאלות בסיסיות, תוך שימוש בפרומפטים נכונים.</li>
+            <li><strong>שילוב מידע קיים</strong> – חיבור למאגרי ידע, מסמכים ומערכות קיימות לקבלת תשובות מדויקות.</li>
+            <li><strong>פריסה ובקרה</strong> – חיבור לאתר, וואטסאפ או פייסבוק, בדיקות, מדידה ושיפור מתמיד.</li>
+          </ul>
+          <a class="card-link" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A2%D7%9C%20%D7%A6%D7%90%D7%98%D7%91%D7%95%D7%98%D7%99%D7%9D%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%91%D7%A0%D7%95%D7%AA%20%D7%90%D7%97%D7%93%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">שיחת התאמה אישית ←</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h4>הפיכת שיחה לאפליקציה חיה</h4>
+          <p>המרת רעיון או שיחה לאפליקציה שפועלת עבורכם מאחורי הקלעים.</p>
+          <div class="tags">
+            <span class="tag tag-blue">פרקטי</span>
+            <span class="tag tag-amber">חדשני</span>
+            <span class="tag tag-teal">חוסך זמן</span>
+          </div>
+          <ul class="guide-list">
+            <li><strong>לכידת המידע</strong> – תיעוד השיחה או הרעיון והפיכתם לתוכנית פעולה ברורה.</li>
+            <li><strong>שימוש בכלי אוטומציה</strong> – חיבור לשירותים שמבצעים פעולות במקומכם (שליחת מיילים, תזכורות ועוד).</li>
+            <li><strong>אינטגרציה למערכות</strong> – חיבור ל‑CRM, מערכות שיווק ומסדי נתונים כדי לאחד תהליכים.</li>
+            <li><strong>הפצה וניטור</strong> – הטמעה באתר או באפליקציה ומעקב אחר ביצועים לשיפור מתמיד.</li>
+          </ul>
+          <a class="card-link" href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A2%D7%9C%20%D7%94%D7%A4%D7%99%D7%9B%D7%AA%20%D7%A9%D7%99%D7%97%D7%94%20%D7%9C%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C%20%D7%91%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99">שיחת התאמה אישית ←</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- מקטע הצעה חינמית להתאמה -->
-  <section id="free-offer" class="free-offer">
-    <h3>בדיקת התאמה ללא עלות</h3>
-    <p>רוצה לדעת איך בינה מלאכותית יכולה לשרת את העסק שלך? אשמח להעניק לך בדיקת התאמה חינמית ולהמליץ על כלים שישדרגו את העבודה היומיומית שלך.</p>
-    <a href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%9F%20%D7%91%D7%91%D7%93%D7%99%D7%A7%D7%AA%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%9C%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99" class="cta-banner">לקבלת בדיקה חינם – דבר איתי</a>
-  </section>
-
-  <!-- מקטע שאלות נפוצות -->
-  <section id="faq" class="faq">
-    <h3>❓ שאלות נפוצות</h3>
-    <details class="faq-item" open>
-      <summary>מי בכלל צריך AI בעסק?</summary>
-      <p>כל עסק שרוצה לחסוך זמן, לצמצם טעויות וליצור חווית לקוח טובה יותר יכול ליהנות מהטמעה נכונה של כלים חכמים. גם עסקים קטנים יכולים להתחיל בקטן ולראות תוצאות מהר.</p>
-    </details>
-    <details class="faq-item">
-      <summary>כמה זמן לוקח לראות תוצאות?</summary>
-      <p>ברוב המקרים כבר בשבוע הראשון מרגישים שיפור באוטומציות ובחוויית הלקוח. אני עובד איתך צעד‑צעד כדי לוודא שכלי ה‑AI משרתים אותך ולא להפך.</p>
-    </details>
-    <details class="faq-item">
-      <summary>אני לא טכנולוג – איך אדע להשתמש בכלים האלה?</summary>
-      <p>כל הפתרונות שלי מגיעים עם הדרכה פשוטה ותמיכה מלאה. אני מלווה אותך כדי שתבין מה קורה מאחורי הקלעים ותוכל להישאר בשליטה מוחלטת.</p>
-    </details>
-  </section>
-
-  <!-- מקטע סיפורי הצלחה -->
-  <section id="success" class="success">
-    <h3>🏆 סיפורי הצלחה</h3>
-    <div class="success-cards">
-      <div class="success-card">
-        <h4>חנות צעצועים ברעננה</h4>
-        <p>בעל החנות החל להפעיל בוט מכירות שענה על שאלות והציע מוצרים מתאימים. התוצאה: עלייה של 25% במכירות תוך חודשיים.</p>
+  <!-- Tools -->
+  <section class="ai-tools section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">כלים</span>
+        <h3>כלים מומלצים</h3>
       </div>
-      <div class="success-card">
-        <h4>מעבדה פרטית לשירות מחשבים</h4>
-        <p>הטמענו מערכת אוטומטית לניהול תורים ולמשוב מהלקוחות. זמן ההמתנה ירד ב‑40% והלקוחות מדרגים את השירות גבוה יותר.</p>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <img src="openai_logo.png" alt="OpenAI Logo" loading="lazy">
+          <h4>ChatGPT / OpenAI</h4>
+          <p>מודל שיחה מתקדם המסוגל לייצר תכנים, לענות על שאלות ולפתח רעיונות חדשים עבורך.</p>
+        </div>
+        <div class="tool-card">
+          <img src="anthropic_logo.png" alt="Anthropic Logo" loading="lazy">
+          <h4>Claude (Anthropic)</h4>
+          <p>עוזר AI בטוח ואתי ליצירת טקסטים, סיעור מוחות והרחבת החשיבה היצירתית.</p>
+        </div>
+        <div class="tool-card">
+          <img src="hugging_face_logo.png" alt="Hugging Face Logo" loading="lazy">
+          <h4>Hugging Face</h4>
+          <p>קהילה ופלטפורמה המאפשרות שימוש קל במודלי שפה וכלי למידת מכונה בקוד פתוח.</p>
+        </div>
+        <div class="tool-card">
+          <img src="gemini_logo.png" alt="Gemini Logo" loading="lazy">
+          <h4>Gemini</h4>
+          <p>הדור הבא של מודלי הגנרטיב מבית Google – מתאים ליצירת תוכן, תובנות וניתוחים מתקדמים.</p>
+        </div>
+        <div class="tool-card">
+          <img src="notebooklm_logo.png" alt="NotebookLM Logo" loading="lazy">
+          <h4>NotebookLM</h4>
+          <p>כלי חכם מבית Google לתיעוד, סיכום וארגון מידע שמפשט את תהליך המחקר והלמידה.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h3>צור קשר</h3>
-    <p>עובד מהמשרד בירושלים ומעניק שירות אונליין בכל הארץ.</p>
-    <p><span class="emoji">📞</span> טלפון/וואטסאפ: <a href="https://wa.me/972527237064">0527237064</a></p>
-    <p><span class="emoji">✉️</span> דוא״ל: <a href="mailto:itzikhr18@gmail.com">itzikhr18@gmail.com</a></p>
+  <!-- Process -->
+  <section id="process" class="process section-padding bg-dark">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">תהליך</span>
+        <h3>איך זה עובד?</h3>
+        <p class="section-subtitle">שלושה צעדים פשוטים להטמעת AI בעסק שלך</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h4>מדברים בוואטסאפ</h4>
+          <p>פגישת היכרות קצרה שבה נבין את האתגרים והיעדים שלך ונעשה מיפוי ראשוני של הצרכים.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h4>ממפים את העסק</h4>
+          <p>יחד נגדיר את המשימות והתהליכים שיכולים להרוויח מהטמעת בינה מלאכותית ונבחר את הכלים המתאימים.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h4>בונים פתרון פרקטי</h4>
+          <p>נבנה פתרון AI מותאם אישית, נטמיע אותו ונלווה אותך לוודא שכל דבר עובד חלק ומוסיף ערך.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- כפתור וואטסאפ צף -->
+  <!-- Free Offer CTA -->
+  <section id="free-offer" class="free-offer section-padding">
+    <div class="container">
+      <div class="cta-box">
+        <h3>בדיקת התאמה ללא עלות</h3>
+        <p>רוצה לדעת איך בינה מלאכותית יכולה לשרת את העסק שלך? אשמח להעניק לך בדיקת התאמה חינמית ולהמליץ על כלים שישדרגו את העבודה היומיומית שלך.</p>
+        <a href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%9F%20%D7%91%D7%91%D7%93%D7%99%D7%A7%D7%AA%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%9C%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99" class="btn btn-primary btn-lg">לקבלת בדיקה חינם – דבר איתי</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">שאלות</span>
+        <h3>שאלות נפוצות</h3>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>מי בכלל צריך AI בעסק?</summary>
+          <p>כל עסק שרוצה לחסוך זמן, לצמצם טעויות וליצור חווית לקוח טובה יותר יכול ליהנות מהטמעה נכונה של כלים חכמים. גם עסקים קטנים יכולים להתחיל בקטן ולראות תוצאות מהר.</p>
+        </details>
+        <details class="faq-item">
+          <summary>כמה זמן לוקח לראות תוצאות?</summary>
+          <p>ברוב המקרים כבר בשבוע הראשון מרגישים שיפור באוטומציות ובחוויית הלקוח. אני עובד איתך צעד‑צעד כדי לוודא שכלי ה‑AI משרתים אותך ולא להפך.</p>
+        </details>
+        <details class="faq-item">
+          <summary>אני לא טכנולוג – איך אדע להשתמש בכלים האלה?</summary>
+          <p>כל הפתרונות שלי מגיעים עם הדרכה פשוטה ותמיכה מלאה. אני מלווה אותך כדי שתבין מה קורה מאחורי הקלעים ותוכל להישאר בשליטה מוחלטת.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section id="success" class="success section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">הצלחות</span>
+        <h3>סיפורי הצלחה</h3>
+      </div>
+      <div class="success-grid">
+        <div class="success-card">
+          <div class="success-metric">+25%</div>
+          <h4>חנות צעצועים ברעננה</h4>
+          <p>בעל החנות החל להפעיל בוט מכירות שענה על שאלות והציע מוצרים מתאימים. התוצאה: עלייה של 25% במכירות תוך חודשיים.</p>
+        </div>
+        <div class="success-card">
+          <div class="success-metric">-40%</div>
+          <h4>מעבדה פרטית לשירות מחשבים</h4>
+          <p>הטמענו מערכת אוטומטית לניהול תורים ולמשוב מהלקוחות. זמן ההמתנה ירד ב‑40% והלקוחות מדרגים את השירות גבוה יותר.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section-padding bg-dark">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">צור קשר</span>
+        <h3>בואו נדבר</h3>
+        <p class="section-subtitle">עובד מהמשרד בירושלים ומעניק שירות אונליין בכל הארץ.</p>
+      </div>
+      <div class="contact-cards">
+        <a href="https://wa.me/972527237064" class="contact-card">
+          <div class="contact-icon">📱</div>
+          <span>וואטסאפ</span>
+          <strong>0527237064</strong>
+        </a>
+        <a href="tel:+972527237064" class="contact-card">
+          <div class="contact-icon">📞</div>
+          <span>טלפון</span>
+          <strong>0527237064</strong>
+        </a>
+        <a href="mailto:itzikhr18@gmail.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <span>דוא״ל</span>
+          <strong>itzikhr18@gmail.com</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float -->
   <a href="https://wa.me/972527237064?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%A6%D7%99%D7%A7%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%93%D7%91%D7%A8" class="whatsapp-float" aria-label="שלח הודעה בוואטסאפ">
     <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.132 6.742 3.052 9.378L1.054 31.29l6.156-1.97A15.923 15.923 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0Zm9.31 22.614c-.39 1.1-1.932 2.014-3.168 2.282-.846.18-1.95.324-5.67-1.218-4.762-1.974-7.826-6.81-8.064-7.126-.23-.316-1.932-2.574-1.932-4.908s1.224-3.482 1.658-3.96c.434-.478.948-.598 1.264-.598.316 0 .632.002.908.016.292.016.684-.11 1.07.816.39.948 1.328 3.244 1.444 3.48.118.236.196.512.04.828-.158.316-.236.512-.474.79-.236.276-.498.618-.712.828-.236.236-.484.492-.208.966.276.474 1.228 2.024 2.636 3.278 1.81 1.612 3.336 2.112 3.81 2.348.474.236.752.196 1.028-.118.276-.316 1.186-1.382 1.502-1.856.316-.474.632-.394 1.068-.236.434.158 2.768 1.304 3.244 1.542.474.236.79.356.908.552.118.196.118 1.14-.272 2.24Z"/></svg>
   </a>
 
   <footer>
-    <p>&copy; <span id="year"></span> איציק הרוש. כל הזכויות שמורות.</p>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> איציק הרוש. כל הזכויות שמורות.</p>
+    </div>
   </footer>
 
   <script>
-    // עדכון אוטומטי של השנה הנוכחית בפוטר
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // סגירת תפריט המובייל לאחר בחירה של קישור
     document.querySelectorAll('.site-nav a').forEach(function(link) {
       link.addEventListener('click', function() {
         var navToggle = document.getElementById('nav-toggle');
@@ -393,18 +591,27 @@
       });
     });
 
-    // הצגת/הסתרת כפתור חזרה למעלה לפי גלילה
     var backToTop = document.querySelector('.back-to-top');
     if (backToTop) {
       window.addEventListener('scroll', function() {
-        backToTop.style.opacity = window.scrollY > 400 ? '0.7' : '0';
+        backToTop.style.opacity = window.scrollY > 400 ? '1' : '0';
         backToTop.style.pointerEvents = window.scrollY > 400 ? 'auto' : 'none';
       });
     }
 
-    // אנימציית הופעה בגלילה עם IntersectionObserver
-    var animatedEls = document.querySelectorAll('.card, .tool-card, .testimonial-card, .faq-item, .success-card, .hero-cta');
+    // Header background on scroll
+    var header = document.querySelector('.site-header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Scroll animations
     if ('IntersectionObserver' in window) {
+      var animatedEls = document.querySelectorAll('.card, .tool-card, .testimonial-card, .faq-item, .success-card, .hero-cta, .benefit-item, .process-step, .future-item, .stat, .contact-card');
       animatedEls.forEach(function(el) {
         el.classList.add('scroll-hidden');
       });
@@ -416,8 +623,42 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.15 });
+      }, { threshold: 0.1 });
       animatedEls.forEach(function(el) { observer.observe(el); });
+    }
+
+    // Counter animation for stats
+    function animateCounters() {
+      document.querySelectorAll('.stat-number').forEach(function(el) {
+        var text = el.textContent;
+        // Only animate if contains a number
+        var match = text.match(/(\d+)/);
+        if (!match) return;
+        var target = parseInt(match[1]);
+        var suffix = text.replace(match[1], '').trim();
+        var prefix = text.indexOf(match[1]) > 0 ? text.substring(0, text.indexOf(match[1])) : '';
+        var current = 0;
+        var step = Math.ceil(target / 40);
+        var timer = setInterval(function() {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = prefix + current + suffix;
+        }, 30);
+      });
+    }
+
+    var statsBar = document.querySelector('.stats-bar');
+    if (statsBar && 'IntersectionObserver' in window) {
+      var statsObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(statsBar);
+        }
+      }, { threshold: 0.5 });
+      statsObserver.observe(statsBar);
     }
   </script>
 </body>
